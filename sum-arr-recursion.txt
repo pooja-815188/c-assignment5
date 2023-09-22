@@ -1,0 +1,19 @@
+#include<stdio.h>
+int sum(int arr[],int n)
+{
+    int s=0;
+    if(n==1)
+    {
+        return n;
+    }
+    else
+    {
+        s=arr[n-1]+sum(arr,n-1);
+    }
+}
+int main()
+{
+    int arr[5]={1,2,3,4,5};
+    int a=sum(arr,5);
+    printf("%d",a);
+}
